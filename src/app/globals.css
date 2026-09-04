@@ -1,26 +1,60 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Podloge — od najtamnije prema uzdignutim plohama */
+  --paper: #1a1818;
+  --paper-2: #241d1e;
+  --paper-3: #2e2426;
+
+  /* Tekst */
+  --ink: #f5efed;
+  --ink-2: rgba(232, 226, 224, 0.66);
+  --ink-3: rgba(232, 226, 224, 0.4);
+
+  /* Brend */
+  --rose: #ce8491;
+  --rose-light: #ffd5d2;
+  --bordo: #8d0b0b;
+  --grey: #545454;
+
+  --line: rgba(232, 226, 224, 0.1);
+  --line-rose: rgba(206, 132, 145, 0.24);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-paper-3: var(--paper-3);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-ink-3: var(--ink-3);
+  --color-rose: var(--rose);
+  --color-rose-light: var(--rose-light);
+  --color-bordo: var(--bordo);
+  --color-line: var(--line);
+  --color-line-rose: var(--line-rose);
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-space-grotesk);
+  --font-display: var(--font-instrument-serif);
+  --font-hand: var(--font-caveat);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+/* Sitni verzal koji se ponavlja kroz stranicu (nadnaslovi, oznake sekcija) */
+.eyebrow {
+  font-size: 0.75rem;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+/* Vodoravna traka radova — skriva scrollbar, zadržava povlačenje */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
 }

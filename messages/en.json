@@ -1,7 +1,7 @@
 {
   "Meta": {
     "title": "Candid Bureau — weddings and short-form content",
-    "description": "We film weddings and turn them into content made for social media."
+    "description": "We film weddings without posing or direction, and turn them into a film and content made for social media."
   },
   "Nav": {
     "work": "Work",
@@ -9,10 +9,92 @@
     "services": "Services",
     "contact": "Contact"
   },
-  "Home": {
-    "tagline": "Your day, told the way it felt.",
-    "intro": "Weddings filmed without posing, cut for the screen in your hand.",
-    "cta": "Request a quote"
+  "Hero": {
+    "eyebrow": "Showreel 2025",
+    "titleLead": "We film what",
+    "titleAccent": "only happens once.",
+    "intro": "Weddings filmed without posing or direction — cut both for the big screen and for the one in your hand.",
+    "showreelLabel": "Showreel 2025",
+    "ctaPrimary": "Check your date",
+    "ctaSecondary": "See the work"
+  },
+  "Work": {
+    "title": "Selected work",
+    "all": "All work"
+  },
+  "About": {
+    "eyebrow": "About",
+    "title": "We don't direct the day. We just don't miss it.",
+    "body": "[Short text about her — how she works, how long, why weddings. Two or three sentences, in her own words.]",
+    "signature": "[Full name] · [city]"
+  },
+  "Services": {
+    "title": "Services",
+    "from": "from",
+    "film": {
+      "name": "Wedding film",
+      "description": "The full film of the day, 8–15 minutes. The whole arc, without rushing past what mattered.",
+      "price": "[PRICE]"
+    },
+    "reels": {
+      "name": "Reels for social",
+      "description": "Three to five vertical cuts, edited for Instagram and TikTok. Ready to post.",
+      "price": "[PRICE]"
+    },
+    "teaser": {
+      "name": "Next-day teaser",
+      "description": "One minute, in your inbox the day after — while everyone is still in it.",
+      "price": "[PRICE]"
+    }
+  },
+  "Contact": {
+    "titleLead": "Your date is probably",
+    "titleAccent": "still open.",
+    "body": "Send us the date and the location — we reply within two days.",
+    "cta": "Check your date",
+    "email": "[email]",
+    "phone": "[phone]"
+  },
+  "ContactPage": {
+    "metaTitle": "Contact — Candid Bureau",
+    "metaDescription": "Check whether your date is still open. Send us the date and location of your wedding.",
+    "eyebrow": "Contact",
+    "title": "Tell us the date and where it all happens.",
+    "intro": "The earlier you write, the better the odds your date is open — summer weekends go first.",
+    "directTitle": "Direct",
+    "email": "[email]",
+    "phone": "[phone]",
+    "responseTime": "We reply within two working days. If you don't hear back, check your spam folder — it happens."
+  },
+  "ContactForm": {
+    "fields": {
+      "name": "Your name",
+      "email": "Email",
+      "date": "Wedding date",
+      "location": "Location",
+      "locationPlaceholder": "City or venue",
+      "message": "Message",
+      "messagePlaceholder": "Tell us briefly what kind of wedding you're planning and what it would mean to have it filmed.",
+      "website": "Leave this field empty"
+    },
+    "submit": "Send enquiry",
+    "sending": "Sending…",
+    "required": "Fields marked with an asterisk are required.",
+    "success": {
+      "title": "Message sent.",
+      "body": "We'll get back to you within two working days. Check your spam folder just in case."
+    },
+    "errors": {
+      "nameRequired": "Please enter your name.",
+      "emailRequired": "Please enter an email so we can reply.",
+      "emailInvalid": "That email doesn't look right.",
+      "messageTooShort": "Please write a sentence or two.",
+      "sendFailed": "Sending failed. Please try again, or write to us directly by email.",
+      "notConfigured": "The form isn't connected to email yet. Please write to us directly at the address above."
+    }
+  },
+  "Video": {
+    "play": "Play video"
   },
   "LanguageSwitcher": {
     "label": "Change language"
