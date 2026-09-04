@@ -11,26 +11,24 @@ export default function LanguageSwitcher() {
   const t = useTranslations("LanguageSwitcher");
 
   return (
-    <nav aria-label={t("label")} className="flex items-center gap-1 text-sm">
-      {routing.locales.map((locale) => {
-        const isActive = locale === activeLocale;
-
-        return (
+    <nav aria-label={t("label")} className="flex items-center gap-1">
+      {routing.locales.map((locale, index) => (
+        <span key={locale} className="flex items-center gap-1">
+          {index > 0 && <span className="text-ink-3">/</span>}
           <Link
-            key={locale}
             href={pathname}
             locale={locale}
-            aria-current={isActive ? "true" : undefined}
+            aria-current={locale === activeLocale ? "true" : undefined}
             className={
-              isActive
-                ? "px-2 py-1 font-medium underline underline-offset-4"
-                : "px-2 py-1 opacity-60 hover:opacity-100"
+              locale === activeLocale
+                ? "eyebrow text-rose"
+                : "eyebrow text-ink-3 transition hover:text-ink-2"
             }
           >
             {locale.toUpperCase()}
           </Link>
-        );
-      })}
+        </span>
+      ))}
     </nav>
   );
 }

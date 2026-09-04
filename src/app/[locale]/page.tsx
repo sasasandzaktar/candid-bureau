@@ -1,39 +1,32 @@
-import { getTranslations, setRequestLocale } from "next-intl/server";
-import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { setRequestLocale } from "next-intl/server";
+import SiteHeader from "@/components/SiteHeader";
+import Hero from "@/components/Hero";
+import WorkStrip from "@/components/WorkStrip";
+import About from "@/components/About";
+import Services from "@/components/Services";
+import Contact from "@/components/Contact";
+import SiteFooter from "@/components/SiteFooter";
 
-// Privremena stranica — služi samo da se vidi da dvojezičnost radi.
-// Pravi izgled dolazi u sljedećem koraku.
 export default async function HomePage({ params }: PageProps<"/[locale]">) {
   const { locale } = await params;
   setRequestLocale(locale);
 
-  const t = await getTranslations("Home");
-  const nav = await getTranslations("Nav");
-
   return (
-    <main className="mx-auto flex w-full max-w-3xl flex-1 flex-col gap-10 px-6 py-16">
-      <header className="flex items-center justify-between">
-        <span className="font-medium tracking-tight">Candid Bureau</span>
-        <LanguageSwitcher />
-      </header>
-
-      <div className="flex flex-col gap-4">
-        <h1 className="text-3xl font-medium tracking-tight text-balance sm:text-4xl">
-          {t("tagline")}
-        </h1>
-        <p className="text-lg opacity-70 text-pretty">{t("intro")}</p>
+    <>
+      {/* Prvi ekran: zaglavlje i showreel zajedno zauzimaju punu visinu */}
+      <div className="flex min-h-svh flex-col">
+        <SiteHeader />
+        <Hero />
       </div>
 
-      <nav className="flex flex-wrap gap-x-6 gap-y-2 text-sm opacity-70">
-        <span>{nav("work")}</span>
-        <span>{nav("about")}</span>
-        <span>{nav("services")}</span>
-        <span>{nav("contact")}</span>
-      </nav>
+      <main>
+        <WorkStrip />
+        <About />
+        <Services />
+        <Contact />
+      </main>
 
-      <p className="mt-auto text-xs opacity-50">
-        Trenutni jezik: <code>{locale}</code>
-      </p>
-    </main>
+      <SiteFooter />
+    </>
   );
 }

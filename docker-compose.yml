@@ -1,0 +1,22 @@
+# Candid Bureau — zaseban stack, potpuno odvojen od postojećeg "iq"
+# projekta (n8n + Caddy). Kači se na njegovu mrežu samo da ga Caddy
+# može doseći; ne objavljuje nijedan port na host.
+
+services:
+  web:
+    image: ghcr.io/sasasandzaktar/candid-bureau:latest
+    container_name: candid-web
+    restart: unless-stopped
+    # Postavke se čitaju iz .env pored ovog fajla (nije u gitu).
+    env_file:
+      - .env
+    expose:
+      - "3000"
+    networks:
+      - iq_default
+
+networks:
+  # Mreža koju je napravio "iq" stack. external znači: koristi
+  # postojeću, nemoj je praviti ni mijenjati.
+  iq_default:
+    external: true

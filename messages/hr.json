@@ -1,7 +1,7 @@
 {
   "Meta": {
     "title": "Candid Bureau — vjenčanja i short-form content",
-    "description": "Snimamo vjenčanja i od njih pravimo sadržaj za društvene mreže."
+    "description": "Snimamo vjenčanja bez poziranja i režije, i od njih pravimo film i sadržaj za društvene mreže."
   },
   "Nav": {
     "work": "Radovi",
@@ -9,10 +9,92 @@
     "services": "Usluge",
     "contact": "Kontakt"
   },
-  "Home": {
-    "tagline": "Vaš dan, ispričan onako kako se osjećao.",
-    "intro": "Vjenčanja snimljena bez poziranja, montirana za ekran u ruci.",
-    "cta": "Zatražite ponudu"
+  "Hero": {
+    "eyebrow": "Showreel 2025",
+    "titleLead": "Snimamo ono što",
+    "titleAccent": "se ne ponavlja.",
+    "intro": "Vjenčanja snimljena bez poziranja i bez režije — montirana i za veliki ekran i za onaj u ruci.",
+    "showreelLabel": "Showreel 2025",
+    "ctaPrimary": "Zatražite termin",
+    "ctaSecondary": "Pogledajte radove"
+  },
+  "Work": {
+    "title": "Odabrani radovi",
+    "all": "Svi radovi"
+  },
+  "About": {
+    "eyebrow": "O nama",
+    "title": "Ne režiramo dan. Samo ga ne propuštamo.",
+    "body": "[Kratki tekst o njoj — kako radi, koliko dugo, zašto baš vjenčanja. Dvije do tri rečenice, njenim riječima.]",
+    "signature": "[Ime i prezime] · [grad]"
+  },
+  "Services": {
+    "title": "Usluge",
+    "from": "od",
+    "film": {
+      "name": "Film vjenčanja",
+      "description": "Cjeloviti film dana, 8–15 minuta. Cijeli tijek, bez ubrzavanja preko onoga što je bilo važno.",
+      "price": "[CIJENA]"
+    },
+    "reels": {
+      "name": "Reelovi za mreže",
+      "description": "Tri do pet vertikalnih isječaka, montirano za Instagram i TikTok. Spremno za objavu.",
+      "price": "[CIJENA]"
+    },
+    "teaser": {
+      "name": "Teaser sljedeći dan",
+      "description": "Jedna minuta, u vašem sandučetu dan poslije — dok su svi još u tome.",
+      "price": "[CIJENA]"
+    }
+  },
+  "Contact": {
+    "titleLead": "Datum je vjerojatno",
+    "titleAccent": "još slobodan.",
+    "body": "Javite datum i lokaciju — odgovaramo u roku od dva dana.",
+    "cta": "Provjerite svoj datum",
+    "email": "[email]",
+    "phone": "[telefon]"
+  },
+  "ContactPage": {
+    "metaTitle": "Kontakt — Candid Bureau",
+    "metaDescription": "Provjerite je li vaš datum slobodan. Javite se s datumom i lokacijom vjenčanja.",
+    "eyebrow": "Kontakt",
+    "title": "Recite nam datum i gdje se sve dešava.",
+    "intro": "Što ranije javite, veća je šansa da je datum slobodan — ljetni vikendi se popune prvi.",
+    "directTitle": "Direktno",
+    "email": "[email]",
+    "phone": "[telefon]",
+    "responseTime": "Odgovaramo u roku od dva radna dana. Ako se ne javimo, provjerite spam — dešava se."
+  },
+  "ContactForm": {
+    "fields": {
+      "name": "Vaše ime",
+      "email": "Email",
+      "date": "Datum vjenčanja",
+      "location": "Lokacija",
+      "locationPlaceholder": "Grad ili mjesto",
+      "message": "Poruka",
+      "messagePlaceholder": "Recite nam ukratko kakvo vjenčanje planirate i što bi vam značilo da bude snimljeno.",
+      "website": "Ostavite ovo polje prazno"
+    },
+    "submit": "Pošaljite upit",
+    "sending": "Šaljem…",
+    "required": "Polja označena zvjezdicom su obavezna.",
+    "success": {
+      "title": "Poruka je poslana.",
+      "body": "Javljamo se u roku od dva radna dana. Provjerite i spam za svaki slučaj."
+    },
+    "errors": {
+      "nameRequired": "Upišite svoje ime.",
+      "emailRequired": "Upišite email da vam možemo odgovoriti.",
+      "emailInvalid": "Ovaj email ne izgleda ispravno.",
+      "messageTooShort": "Napišite bar rečenicu-dvije.",
+      "sendFailed": "Slanje nije uspjelo. Pokušajte ponovo ili nam pišite direktno na email.",
+      "notConfigured": "Forma još nije spojena na mail. Pišite nam direktno na email iznad."
+    }
+  },
+  "Video": {
+    "play": "Pusti video"
   },
   "LanguageSwitcher": {
     "label": "Promijeni jezik"
