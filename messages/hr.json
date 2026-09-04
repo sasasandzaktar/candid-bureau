@@ -1,0 +1,20 @@
+{
+  "Meta": {
+    "title": "Candid Bureau — vjenčanja i short-form content",
+    "description": "Snimamo vjenčanja i od njih pravimo sadržaj za društvene mreže."
+  },
+  "Nav": {
+    "work": "Radovi",
+    "about": "O nama",
+    "services": "Usluge",
+    "contact": "Kontakt"
+  },
+  "Home": {
+    "tagline": "Vaš dan, ispričan onako kako se osjećao.",
+    "intro": "Vjenčanja snimljena bez poziranja, montirana za ekran u ruci.",
+    "cta": "Zatražite ponudu"
+  },
+  "LanguageSwitcher": {
+    "label": "Promijeni jezik"
+  }
+}
