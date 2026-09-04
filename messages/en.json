@@ -1,0 +1,20 @@
+{
+  "Meta": {
+    "title": "Candid Bureau — weddings and short-form content",
+    "description": "We film weddings and turn them into content made for social media."
+  },
+  "Nav": {
+    "work": "Work",
+    "about": "About",
+    "services": "Services",
+    "contact": "Contact"
+  },
+  "Home": {
+    "tagline": "Your day, told the way it felt.",
+    "intro": "Weddings filmed without posing, cut for the screen in your hand.",
+    "cta": "Request a quote"
+  },
+  "LanguageSwitcher": {
+    "label": "Change language"
+  }
+}
